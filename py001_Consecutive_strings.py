@@ -1,4 +1,5 @@
 """
+https://www.codewars.com/kata/56a5d994ac971f1ac500003e/python
 题目如下：
 给您一个字符串数组s和一个整数k。您的任务是返回由数组中的k个连续字符串组成的最长字符串。
 例子：longest_consec（["abigail"，"theta"，"form"，"libe"，"zas"，"theta"，"abigail"]，2）->"abigailtheta"
@@ -19,7 +20,7 @@ def longest_consec(s, k):
     # 第二种：
     # return max([''.join(s[i:i+k]) for i in range(len(s)-k+1)], key=lambda x:len(x)) if 0 <= k <= len(s) else ''
 
-    # 第三种：优化lambda
+    # 第三种：优化掉lambda
     return max([''.join(s[i:i + k]) for i in range(len(s) - k + 1)], key=len) if 0 <= k <= len(s) else ''
 
 
