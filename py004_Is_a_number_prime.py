@@ -1,5 +1,6 @@
 """
 https://www.codewars.com/kata/5262119038c0985a5b00029f/train/python
+质数是大于1的自然数，除1及其本身外，没有除数
 如果是质数，返回True；否则返回False
 但是现在代码，性能有问题。
 ****只需遍历至range(2, math.sqrt(n) + 1)即可。记住。
