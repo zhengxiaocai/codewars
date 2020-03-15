@@ -2,7 +2,7 @@
 https://www.codewars.com/kata/5262119038c0985a5b00029f/train/python
 质数是大于1的自然数，除1及其本身外，没有除数
 如果是质数，返回True；否则返回False
-但是现在代码，性能有问题。
+从头到尾的遍历，或者是遍历到num/2，数据太大的时候，都会有性能问题。
 ****只需遍历至range(2, math.sqrt(n) + 1)即可。记住。
 ****all()
 """
@@ -33,8 +33,8 @@ if __name__ == '__main__':
     print(is_prime(73), True)
     print(is_prime(75), False)
     print(is_prime(-1), False)
-    print(is_prime(98766781), False)
-    print(is_prime_best(98766781), False)
+    print(is_prime(98766781), True)
+    print(is_prime_best(98766781), True)
     print(time.time() - start)
     print(math.sqrt(98766781))
 
