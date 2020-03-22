@@ -1,0 +1,17 @@
+"""
+https://www.codewars.com/kata/5268af3872b786f006000228/train/python
+让两次random.randint()的结果一样。
+"""
+
+
+from random import randint, seed
+
+
+seed(1)
+guess = randint(1, 100)
+seed(1)
+
+
+if __name__ == '__main__':
+    lucky_number = randint(1, 100)
+    print(guess, lucky_number)
