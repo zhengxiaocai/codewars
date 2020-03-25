@@ -16,6 +16,8 @@ def find_n(m):
     v = int(pow(m, 1/3))
     b = f(v)
     print(list(b))
+    # 为什么这里分明已经在判断已经进去了，但是后边index()却说不在list？
+    # 或者有啥办法可以取到生成器的下标？
     if m in b:
         return list(b).index(m)
     else:
