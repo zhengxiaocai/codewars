@@ -9,6 +9,10 @@ def kebabize(string):
     return ''.join(['-{}'.format(j.lower()) if j.isupper() else j for j in ''.join([i for i in string if i.isalpha()])]).strip('-')
 
 
+def kebabize_best(string):
+    return ''.join('-' + j.lower() if j.isupper() else j for j in string if j.isalpha()).strip('-')
+
+
 if __name__ == '__main__':
     print(kebabize('camelsHaveThreeHumps') == 'camels-have-three-humps')
     print(kebabize('camelsHave3Humps') == 'camels-have-humps')
