@@ -46,7 +46,7 @@ def solution_best(n):
     des = ["", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"]
     sot = ["", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"]
     tys = ["", "M", "MM", "MMM", "MMMM"]
-    return f'{tys[n//1000]}{sot[n%1000//100]}{des[n%100//10]}{ed[n%10]}'
+    return f'{tys[n // 1000]}{sot[n % 1000 // 100]}{des[n % 100 // 10]}{ed[n % 10]}'
 
 
 if __name__ == '__main__':
