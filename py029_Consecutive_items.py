@@ -6,7 +6,7 @@ def consecutive(arr, a, b):
 
 
 def consecutive_best(arr, a, b):
-    return abs(arr.index(1) - arr.index(b)) == 1
+    return abs(arr.index(a) - arr.index(b)) == 1
 
 
 if __name__ == '__main__':
